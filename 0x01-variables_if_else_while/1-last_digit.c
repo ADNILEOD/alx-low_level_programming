@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 #include <string.h>
-
+#include <stream.h>
 /**
  * main - A program that prints last number of n
  * Return:0
@@ -13,7 +13,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	char charN[] = n->ToString().ToCharArray();
+	char charN[] = n.ToString().ToCharArray();
 	int size = charN.Length;
 	int lastNumb = Integer.parse(charN[size - 1]);
 

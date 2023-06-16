@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include <string.h>
+
 /**
  * main - A program that prints last number of n
  * Return:0
@@ -11,9 +13,9 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	char charN[] = n.ToCharArray();
+	char charN[] = n.toString().ToCharArray();
 	int size = charN.Length;
-	int lastNumb = charN[size - 1];
+	int lastNumb = Integer.parse(charN[size - 1]);
 
 	if (lastNumb < 5)
 	{

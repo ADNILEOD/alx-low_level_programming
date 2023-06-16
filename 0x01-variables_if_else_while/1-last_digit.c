@@ -13,7 +13,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	char charN[] = n.toString().ToCharArray();
+	char charN[] = n.ToString().ToCharArray();
 	int size = charN.Length;
 	int lastNumb = Integer.parse(charN[size - 1]);
 

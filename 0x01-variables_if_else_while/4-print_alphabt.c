@@ -13,7 +13,7 @@ int main(void)
 		{
 			continue;
 		}
-		if (chr != 101 || chr != 113)
+		if (chr != 101 && chr != 113)
 		{
 			putchar(chr);
 		}

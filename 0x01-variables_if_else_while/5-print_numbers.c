@@ -5,11 +5,13 @@
  */
 int main(void)
 {
-	int i;
-
-	for (i = 0; i < 10; i = i + 1)
+	int digit = 0;
+	
+	while (digit <= 9)
 	{
-		printf("%d", i);
+		printf("i", digit);
+		digit++;
 	}
 	printf("\n");
+	return (0);
 }

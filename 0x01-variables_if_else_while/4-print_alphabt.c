@@ -7,7 +7,7 @@ int main(void)
 {
 	char chr;
 
-	for (chr = 65; chr <= 97; chr = chr + 1)
+	for (chr = 97; chr <= 122; chr = chr + 1)
 	{
 		if (chr > 90 && chr < 97)
 		{

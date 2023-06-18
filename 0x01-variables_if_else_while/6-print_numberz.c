@@ -6,6 +6,7 @@
 int main(void)
 {
 	int number = 9;
+	long values;
 
 	while (number <= 9)
 	{

@@ -15,7 +15,7 @@ int main(void)
 		}
 		if (chr != 101 || chr != 113)
 		{
-		putchar(chr);
+			putchar(chr);
 		}
 	}
 	putchar('\n');

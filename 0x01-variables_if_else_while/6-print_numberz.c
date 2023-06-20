@@ -1,17 +1,18 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
  * main - A program that print numbers of base 10
  * Return:0
  */
 int main(void)
 {
-	int number = 9;
-	long values;
+	int number;
 
-	while (number <= 9)
+number = 0;
+
+	while (number < 9)
 	{
-		putchar(number);
-		number = number + 1;
+		putchar(number + '0');
+		number = number++;
 	}
 	putchar('\n');
 	return (0);

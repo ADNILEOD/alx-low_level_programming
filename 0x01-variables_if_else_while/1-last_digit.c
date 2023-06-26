@@ -2,7 +2,6 @@
 #include <time.h>
 #include <stdio.h>
 #include <string.h>
-#include <stream.h>
 /**
  * main - A program that prints last number of n
  * Return:0
@@ -10,24 +9,23 @@
 int main(void)
 {
 	int n;
+	int m;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	char charN[] = n.ToString().ToCharArray();
-	int size = charN.Length;
-	int lastNumb = Integer.parse(charN[size - 1]);
+	m = n % 10;
 
-	if (lastNumb < 5)
+	if (m < 5 && m != 0)
 	{
-		printf("Last digit of %d is %d and is less than 5 and not 0\n", n, lastNumb);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, m);
 	}
-	else if (lastNumb == 0)
+	else if (m == 0)
 	{
-		printf("Last digit of %d is %d and is 0\n", n, lastNumb);
+		printf("Last digit of %d is %d and is 0\n", n, m);
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, lastNumb);
+		printf("Last digit of %d is %d and is greater than 5\n", n, m);
 	}
 	return (0);
 }
